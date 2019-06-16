@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "871703971565",
+    "firebase_url": "https://memoir-d953f.firebaseio.com",
+    "project_id": "memoir-d953f",
+    "storage_bucket": "memoir-d953f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871703971565:android:c667ca10b59aeb05",
+        "android_client_info": {
+          "package_name": "com.example.memoir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871703971565-fk2auk6qvkc0boakr5s4njmpfah1lfh0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxSIqOHUVIFE5qSmrDFXaKOEMHdnG-ai0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871703971565-fk2auk6qvkc0boakr5s4njmpfah1lfh0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

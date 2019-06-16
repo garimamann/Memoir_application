@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Activities.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/activity_register_profile_image_value"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        />
+
+    <EditText
+        android:id="@+id/activity_register_first_name_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_margin="@dimen/twentydp"
+        android:hint="@string/activity_register_first_name_value_hint"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/activity_register_last_name_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twentydp"
+        android:hint="@string/activity_register_last_name_vale_hint"
+        android:layout_marginBottom="@dimen/margin"
+        android:ems="10"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/activity_register_email_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twentydp"
+        android:layout_marginBottom="@dimen/margin"
+        android:hint="@string/login_id_hint"
+        android:ems="10"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/activity_register_password_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twentydp"
+        android:layout_marginBottom="@dimen/margin"
+        android:hint="@string/activity_register_password_value_hint"
+        android:ems="10"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/activity_register_confirm_password_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="@dimen/margin"
+        android:hint="@string/activity_register_confirm_password_value_hint"
+        android:ems="10"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/activity_register_register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twentydp"
+        android:layout_marginBottom="@dimen/margin"
+        android:text="Register"/>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Standard Dimensions -->
+    <dimen name="onedp">1dp</dimen>
+    <dimen name="twodp">2dp</dimen>
+    <dimen name="threedp">3dp</dimen>
+    <dimen name="fivedp">5dp</dimen>
+    <dimen name="eightdp">8dp</dimen>
+    <dimen name="tendp">10dp</dimen>
+    <dimen name="fifteendp">15dp</dimen>
+    <dimen name="twentydp">20dp</dimen>
+    <dimen name="twentyfivedp">25dp</dimen>
+    <dimen name="thirtydp">30dp</dimen>
+    <dimen name="fiftydp">50dp</dimen>
+    <dimen name="onetwentydp">130dp</dimen>
+    <!-- Global Text Sizes -->
+    <dimen name="global_text_size_largest">40sp</dimen>
+    <dimen name="global_text_size_large">30sp</dimen>
+    <dimen name="global_text_size_medium">20sp</dimen>
+    <dimen name="global_text_size">15sp</dimen>
+    <dimen name="global_text_size_small">13sp</dimen>
+    <dimen name="global_text_size_smallest">11sp</dimen>
+    <dimen name="badge_text_size">10sp</dimen>
+    <dimen name="global_title_text_size">18sp</dimen>
+    <integer name="global_text_size_largest_integer">40</integer>
+    <integer name="global_text_size_large_integer">30</integer>
+    <integer name="global_text_size_medium_integer">20</integer>
+    <integer name="global_text_size_integer">15</integer>
+    <integer name="global_text_size_small_integer">13</integer>
+    <integer name="global_text_size_smallest_integer">11</integer>
+    <integer name="badge_text_size_integer">10</integer>
+    <integer name="global_title_text_size_integer">20</integer>
+    <integer name="global_title_text_size_home">17</integer>
+
+    <dimen name="margin">55dp</dimen>
+    <dimen name="reduce_dialog_width">50dp</dimen>
+    reduce_dialog_width
+</resources>

@@ -5,10 +5,10 @@
     <string name="activity_login_button">LogIn</string>
 
 
-
     <string name="activity_register_password_value_hint">Password</string>
     <string name="activity_register_confirm_password_value_hint">Confirm Password</string>
     <string name="activity_register_last_name_vale_hint">Last Name</string>
     <string name="activity_register_first_name_value_hint">First Name</string>
+    <string name="audio_record_permission">Permission to access microphone required</string>
 
 </resources>

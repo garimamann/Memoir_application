@@ -1,5 +1,6 @@
 package com.example.memoir.Activities;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -37,6 +38,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
         //Initializing utils
         mValidationsUtils = ValidationsUtils.getInstance();
+        mToastUtils = ToastUtils.getInstance();
 
         //Initializing widgets
         mFirstName = (EditText) findViewById(R.id.activity_register_first_name_value);
@@ -62,13 +64,13 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.activity_register_register_button:
-                mValidateFileds();
+                mValidateFields();
 
 
         }
     }
 
-    private void mValidateFileds() {
+    private void mValidateFields() {
         String firstNameValue, lastNameValue, emailValue, passValue, confirmPasswordValue;
         emailValue = mEmail.getText().toString().trim();
         passValue = mPassword.getText().toString().trim();
@@ -97,7 +99,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             mToastUtils.toast(getApplicationContext(), "Invalid Email");
         } else if (!mValidationsUtils.isPasswordLenghtValid(passValue, 6)) {
             mToastUtils.toast(getApplicationContext(), "Invalid Password");
-        } else {
+        }
+        else if(!mValidationsUtils.isPasswordAndConfirmPasswordMatching(passValue,confirmPasswordValue)){
+            mToastUtils.toast(getApplicationContext(), "  Confirm Password andPassword fileds donot match");
+
+        }
+        else {
 
             performRegistration(emailValue,passValue);
 
@@ -114,7 +121,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                             // Sign in success, update UI with the signed-in user's information
 
                             FirebaseUser user = mAuth.getCurrentUser();
-                            mToastUtils.toast(getApplicationContext(),"Registeration succesful");
+                            Toast.makeText(RegisterActivity.this, "Registeration successful.",
+                                    Toast.LENGTH_SHORT).show();
                             mSignInUser( email ,password);
 
                         } else {
@@ -139,7 +147,12 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             FirebaseUser user = mAuth.getCurrentUser();
+                            Intent intent = new Intent(getApplicationContext(),SavedMemoActivity.class);
+                            startActivity(intent);
+
                             mToastUtils.toast(getApplicationContext(),"SignIn succesful");
+
+
 
                         } else {
                             // If sign in fails, display a message to the user.
